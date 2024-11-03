@@ -1,0 +1,26 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
+        git:
+          default-label: main
+          uri: git@github.com:ckswls56/cloud-config-test.git
+          # search-paths:
+          ignoreLocalSshSettings: true
+          strictHostKeyChecking: false
+          hostKey: AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg=
+          hostKeyAlgorithm: ecdsa-sha2-nistp256
+          privateKey: |
+            -----BEGIN EC PRIVATE KEY-----
+            MHcCAQEEIJURdkw6hJrCdNRahe3pN+SyQAkJ+i0Bn62DJ0UZJvYgoAoGCCqGSM49
+            AwEHoUQDQgAESBnoVrJUxPOIaLz8mhFryzs5Imtjacmgngo0xt/RQw9cp6GGjJyT
+            Hp9Y5TpMy/uz/DiHIKr/J9pCbR3p6kFCDQ==
+            -----END EC PRIVATE KEY-----
+
+
+encrypt:
+  key: 1234567890123456
